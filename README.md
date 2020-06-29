@@ -30,7 +30,7 @@ After these modifications the code is ready to compile.
 ### Dsiplay Screens
 Once the skecth has been loaded to your arduino it will start to sequence through a set of screens displaying various bits of information. The following describes each screen. The period can be controlled by adjusting the switch_screen_time variable in the code. set to 5000ms(5seconds) by default.
 
-### Lighting Stats
+#### Lighting Stats
  Displays information in text format about detected lightning strikes
 * Strike Count: - Total number of strikes detected since device has been turned on.
 * Ave intensity: - Gives the average sampled value of sig-A.
@@ -41,6 +41,16 @@ Once the skecth has been loaded to your arduino it will start to sequence throug
 
 
 <img src="/images/Text.jpg" alt="Text Screen" data-canonical-src="/images/Text.jpg" width="300"/>
+
+#### Strikes Chart
+Dsiplays number of detected lightning strikes per minute over a period of 15 minutes. This chart provides useful trend information on frequency of detected lightning strikes.
+
+<img src="/images/Strikes_Chart.jpg" alt="Strikes Chart" data-canonical-src="/images/Strikes_Chart.jpg" width="300"/>
+
+#### Sig-A waveform (Experimental)
+Shows sampled data from sig-A pin just after sig-D is triggered
+
+<img src="/images/Strikes_Chart.jpg" alt="Sig-A Signal Chart" data-canonical-src="/images/Strikes_Chart.jpg" width="300"/>
 
 
 
