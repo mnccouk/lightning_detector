@@ -57,5 +57,15 @@ Shows strength of detected lightning strikes over a period of 15 mins. This is b
 
 <img src="/images/Strength_Chart.jpg" alt="Strength Chart" data-canonical-src="/images/Strength_Chart.jpg" width="300"/>
 
+# Sig-A Sampler
+The Sig-A_Sample folder provides a Arduino sketch to capture the signal generated on sig-A pin of the SMDKING EMP detection module. 
+A number of prescalers are defined that allow sample rate of the ADC converter of the Arduino device to be changed. By defalt the prescale factor is set to 128, with a cpu speed of 16Mhz this gives 16MHz/128 = 125 KHz. It takes 13 clock cycles to convert the analogue signal to digital making the default sample rate = 125Khz/13 = 9600Hz
+Setting the prescaler to 16 gives 16Mhz/16 = 1Mhz, 1Mhz/13 = 77Khz sample rate. This does come at a cost of precision, best thing to do is try the different prescalers and compare your results.
+
+Running at 77Khz sample rate I was able to obtain data that plotted the following chart.
+
+<img src="/images/sigAChart.png" alt="sig-A Chart" data-canonical-src="/images/sigAChart.png" width="400"/>
+
+
 
 
