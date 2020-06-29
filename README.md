@@ -39,7 +39,8 @@ Run Time: - Number of minutes device has been turned on for.
 Min Val: - Is the lowest value of Sig A (mostly used for experimentation) over a minute.
 This min: - Displays the number of strikes in the current minute.
 
-![Text Screen](/images/Text.jpg | width=300)
+
+<img src="/images/Text.jpg" alt="Text Screen" data-canonical-src="/images/Text.jpg" width="300"/>
 
 
 
