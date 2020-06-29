@@ -1,5 +1,7 @@
-#define cbi(sfr,bit)(_SFR_BYTE(sfr)&= ~_BV(bit));
-#define sbi(sfr,bit)(_SFR_BYTE(sfr)|=_BV(bit));
+//sig-A sampler - Matt Carless
+//Samples sig-A signal watching for a voltage drop.
+//If detectected 900 samples are taken and stored in RAM.
+//These values are then printed to the serial port 
 
 const unsigned short numReadings = 900;
 unsigned short analogVals [numReadings];
