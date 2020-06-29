@@ -31,7 +31,7 @@ After these modifications the code is ready to compile.
 Once the skecth has been loaded to your arduino it will start to sequence through a set of screens displaying various bits of information. The following describes each screen. The period can be controlled by adjusting the switch_screen_time variable in the code. set to 5000ms(5seconds) by default.
 
 ### Lighting Stats
-* Displays information in text format about detected lightning strikes
+ Displays information in text format about detected lightning strikes
 * Strike Count: - Total number of strikes detected since device has been turned on.
 * Ave intensity: - Gives the average sampled value of sig-A.
 * Strikes min: - Displays rolling average of strikes over 5 min period
